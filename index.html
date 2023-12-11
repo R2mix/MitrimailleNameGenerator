@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div class="image-container"></div>
+        <form class="selector" id="factionRadio">
+            <label class="radio-label" for="radio1">
+                <input type="radio" name="imageSelector" value="data/antorqua.jpg" id="radio1">
+                <span class="radio-button"></span> Antorqua
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="imageSelector" value="data/harbeis.jpg">
+                <span class="radio-button"></span> Harbeïs
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="imageSelector" value="data/infinites.jpg">
+                <span class="radio-button"></span> Infinites
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="imageSelector" value="data/narglia.jpg">
+                <span class="radio-button"></span> Narglia
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="imageSelector" value="data/skalmena.jpg">
+                <span class="radio-button"></span> Skalmena
+            </label>
+            <div class="selectorSend">
+              <button class="radio-label" id="generating">Generate</button>
+            </div>
+        </form>
+      </div>
+       
+       <div>
+        <label class="result-label" id="resultatLabel"></label>
+       </div>
+  
+    <script src="sketch.js"></script>
+  </body>
+</html>
